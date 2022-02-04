@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,14 +79,16 @@
 
 
 
+<meta name="description" content="1. 电商管理后台 API 接口文档1.1. API V1 接口说明 接口基准地址：http:&#x2F;&#x2F;127.0.0.1:8888&#x2F;api&#x2F;private&#x2F;v1&#x2F; 服务端已开启 CORS 跨域支持 API V1 认证统一使用 Token 认证 需要授权的 API ，必须在请求头中使用 Authorization 字段提供 token 令牌 使用 HTTP Status Code 标识状态 数据返回格式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello world">
-<meta property="og:url" content="http://example.com/2021/11/15/hello-world-1/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="电商管理后台 API 接口文档">
+<meta property="og:url" content="https://chenchuixue.github.io/2021/11/15/hello-world-1/index.html">
+<meta property="og:site_name" content="陈吹雪的博客">
+<meta property="og:description" content="1. 电商管理后台 API 接口文档1.1. API V1 接口说明 接口基准地址：http:&#x2F;&#x2F;127.0.0.1:8888&#x2F;api&#x2F;private&#x2F;v1&#x2F; 服务端已开启 CORS 跨域支持 API V1 认证统一使用 Token 认证 需要授权的 API ，必须在请求头中使用 Authorization 字段提供 token 令牌 使用 HTTP Status Code 标识状态 数据返回格式">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-11-15T13:23:15.000Z">
-<meta property="article:modified_time" content="2021-11-15T13:26:30.044Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2022-02-04T11:51:48.237Z">
+<meta property="article:author" content="Bertram">
 <meta property="article:tag" content="郭老师yyds">
 <meta name="twitter:card" content="summary">
 
@@ -96,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2021/11/15/hello-world-1/"/>
+  <link rel="canonical" href="https://chenchuixue.github.io/2021/11/15/hello-world-1/"/>
 
 
 
 
 
-  <title>hello world | Hexo</title>
+  <title>电商管理后台 API 接口文档 | 陈吹雪的博客</title>
   
 
 
@@ -154,12 +156,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">陈吹雪的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">别人是怎么这么看我的</p>
       
   </div>
 
@@ -291,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/15/hello-world-1/">
+    <link itemprop="mainEntityOfPage" href="https://chenchuixue.github.io/2021/11/15/hello-world-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -300,7 +302,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="陈吹雪的博客">
     </span>
 
     
@@ -308,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hello world</h1>
+          <h1 class="post-title" itemprop="name headline">电商管理后台 API 接口文档</h1>
         
 
         <div class="post-meta">
@@ -358,7 +360,24 @@
       
 
       
-        
+        <h1 id="1-电商管理后台-API-接口文档"><a href="#1-电商管理后台-API-接口文档" class="headerlink" title="1. 电商管理后台 API 接口文档"></a>1. 电商管理后台 API 接口文档</h1><h2 id="1-1-API-V1-接口说明"><a href="#1-1-API-V1-接口说明" class="headerlink" title="1.1. API V1 接口说明"></a>1.1. API V1 接口说明</h2><ul>
+<li>接口基准地址：<code>http://127.0.0.1:8888/api/private/v1/</code></li>
+<li>服务端已开启 CORS 跨域支持</li>
+<li>API V1 认证统一使用 Token 认证</li>
+<li>需要授权的 API ，必须在请求头中使用 <code>Authorization</code> 字段提供 <code>token</code> 令牌</li>
+<li>使用 HTTP Status Code 标识状态</li>
+<li>数据返回格式统一使用 JSON</li>
+</ul>
+<h3 id="1-1-1-支持的请求方法"><a href="#1-1-1-支持的请求方法" class="headerlink" title="1.1.1. 支持的请求方法"></a>1.1.1. 支持的请求方法</h3><ul>
+<li>GET（SELECT）：从服务器取出资源（一项或多项）。</li>
+<li>POST（CREATE）：在服务器新建一个资源。</li>
+<li>PUT（UPDATE）：在服务器更新资源（客户端提供改变后的完整资源）。</li>
+<li>PATCH（UPDATE）：在服务器更新资源（客户端提供改变的属性）。</li>
+<li>DELETE（DELETE）：从服务器删除资源。</li>
+<li>HEAD：获取资源的元数据。</li>
+<li>OPTIONS：获取信息，关于资源的哪些属性是客户端可以改变的。</li>
+</ul>
+
       
     </div>
     
@@ -448,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -501,6 +529,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%94%B5%E5%95%86%E7%AE%A1%E7%90%86%E5%90%8E%E5%8F%B0-API-%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3"><span class="nav-number">1.</span> <span class="nav-text">1. 电商管理后台 API 接口文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-API-V1-%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E"><span class="nav-number">1.1.</span> <span class="nav-text">1.1. API V1 接口说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-%E6%94%AF%E6%8C%81%E7%9A%84%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1. 支持的请求方法</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -518,7 +562,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">Bertram</span>
 
   
 </div>
@@ -532,7 +576,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
